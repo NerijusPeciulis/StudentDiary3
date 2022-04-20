@@ -20,11 +20,11 @@ namespace StudentDiary3.DataAcces
             University university6 = new University("Mykolo Romerio universitetas", "Ateities g. 20, Vilnius", "NEK-85");
 
             Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02");
-            Student student2 = new Student("Nerijus", "Peciulis", "2000-11-02");
-            Student student3 = new Student("Nerijus", "Peciulis", "2000-11-02");
-            Student student4 = new Student("Nerijus", "Peciulis", "2000-11-02");
-            Student student5 = new Student("Nerijus", "Peciulis", "2000-11-02");
-            Student student6 = new Student("Nerijus", "Peciulis", "2000-11-02");
+            Student student2 = new Student("Kristina", "Peciuliene", "2000-10-02");
+            Student student3 = new Student("Meda", "Peciulyte", "2000-01-02");
+            Student student4 = new Student("Aurimas", "Peciulis", "2000-08-02");
+            Student student5 = new Student("Leja", "Peciulyte", "2000-04-02");
+            Student student6 = new Student("Austeja", "Peciulyte", "2000-03-02");
 
             Random rnd = new Random();
             int grade = rnd.Next(5, 10);
@@ -58,8 +58,24 @@ namespace StudentDiary3.DataAcces
             Semester semester5 = new Semester(firstTrimestr5, secondTrimestr5, thirdTrimestr5);
             Semester semester6 = new Semester(firstTrimestr6, secondTrimestr6, thirdTrimestr6);
 
-
+            diaryReports.Add(new DiaryReport(1, university1, student1, semester1));
+            diaryReports.Add(new DiaryReport(2, university2, student2, semester2));
+            diaryReports.Add(new DiaryReport(3, university3, student3, semester3));
+            diaryReports.Add(new DiaryReport(4, university4, student4, semester4));
+            diaryReports.Add(new DiaryReport(5, university5, student5, semester5));
+            diaryReports.Add(new DiaryReport(6, university6, student6, semester6));
 
         }
+
+        public List<DiaryReport> Retrieve()
+        {
+            return diaryReports;
+        }
+
+        public DiaryReport Retrieve(int number)
+        {
+            return diaryReports[number];
+        }
+
     }
 }
