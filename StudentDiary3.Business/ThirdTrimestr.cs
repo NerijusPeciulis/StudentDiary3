@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace StudentDiary3.Business
 {
-    internal class Grade
+    public class ThirdTrimestr
     {
+        public Random Grade { get; }
+
+
+        public ThirdTrimestr(Random grade)
+        {
+            Grade = grade;
+        }
     }
 }

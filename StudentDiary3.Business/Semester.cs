@@ -8,11 +8,11 @@ namespace StudentDiary3.Business
 {
     public class Semester
     {
-        public Random FirstTrimestr { get; }
-        public Random SecondTrimestr { get; }
-        public Random ThirdTrimestr { get; }
+        public FirstTrimestr FirstTrimestr { get; }
+        public SecondTrimestr SecondTrimestr { get; }
+        public ThirdTrimestr ThirdTrimestr { get; }
 
-        public Semester(Random firstTrimestr, Random secondTrimestr, Random thirdTrimestr)
+        public Semester(FirstTrimestr firstTrimestr, SecondTrimestr secondTrimestr, ThirdTrimestr thirdTrimestr)
         {
             FirstTrimestr = firstTrimestr;
             SecondTrimestr = secondTrimestr;

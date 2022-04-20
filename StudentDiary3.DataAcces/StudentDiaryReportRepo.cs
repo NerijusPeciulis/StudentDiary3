@@ -19,7 +19,19 @@ namespace StudentDiary3.DataAcces
             University university5 = new University("Lietuvos sveikatos mokslų universitetas", "A. Mickevičiaus g. 9, Kaunas, Kaunas", "NEK-84");
             University university6 = new University("Mykolo Romerio universitetas", "Ateities g. 20, Vilnius", "NEK-85");
 
+            Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02");
+            Student student2 = new Student("Nerijus", "Peciulis", "2000-11-02");
+            Student student3 = new Student("Nerijus", "Peciulis", "2000-11-02");
+            Student student4 = new Student("Nerijus", "Peciulis", "2000-11-02");
+            Student student5 = new Student("Nerijus", "Peciulis", "2000-11-02");
+            Student student6 = new Student("Nerijus", "Peciulis", "2000-11-02");
 
+
+
+            FirstTrimestr firstTrimestr1 = new FirstTrimestr()
+
+
+            Semester semester1 = new Semester()
         }
     }
 }
