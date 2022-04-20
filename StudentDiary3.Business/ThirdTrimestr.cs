@@ -8,10 +8,10 @@ namespace StudentDiary3.Business
 {
     public class ThirdTrimestr
     {
-        public Random Grade { get; }
+        public int Grade { get; }
 
 
-        public ThirdTrimestr(Random grade)
+        public ThirdTrimestr(int grade)
         {
             Grade = grade;
         }

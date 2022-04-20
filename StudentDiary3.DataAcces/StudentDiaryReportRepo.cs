@@ -27,28 +27,28 @@ namespace StudentDiary3.DataAcces
             Student student6 = new Student("Austeja", "Peciulyte", "2000-03-02");
 
             Random rnd = new Random();
-            int grade = rnd.Next(5, 10);
+            int grades = rnd.Next(5, 10);
 
-            FirstTrimestr firstTrimestr1 = new FirstTrimestr(rnd);
-            FirstTrimestr firstTrimestr2 = new FirstTrimestr(rnd);
-            FirstTrimestr firstTrimestr3 = new FirstTrimestr(rnd);
-            FirstTrimestr firstTrimestr4 = new FirstTrimestr(rnd);
-            FirstTrimestr firstTrimestr5 = new FirstTrimestr(rnd);
-            FirstTrimestr firstTrimestr6 = new FirstTrimestr(rnd);
+            FirstTrimestr firstTrimestr1 = new FirstTrimestr(grades);
+            FirstTrimestr firstTrimestr2 = new FirstTrimestr(grades);
+            FirstTrimestr firstTrimestr3 = new FirstTrimestr(grades);
+            FirstTrimestr firstTrimestr4 = new FirstTrimestr(grades);
+            FirstTrimestr firstTrimestr5 = new FirstTrimestr(grades);
+            FirstTrimestr firstTrimestr6 = new FirstTrimestr(grades);
 
-            SecondTrimestr secondTrimestr1 = new SecondTrimestr(rnd);
-            SecondTrimestr secondTrimestr2 = new SecondTrimestr(rnd);
-            SecondTrimestr secondTrimestr3 = new SecondTrimestr(rnd);
-            SecondTrimestr secondTrimestr4 = new SecondTrimestr(rnd);
-            SecondTrimestr secondTrimestr5 = new SecondTrimestr(rnd);
-            SecondTrimestr secondTrimestr6 = new SecondTrimestr(rnd);
+            SecondTrimestr secondTrimestr1 = new SecondTrimestr(grades);
+            SecondTrimestr secondTrimestr2 = new SecondTrimestr(grades);
+            SecondTrimestr secondTrimestr3 = new SecondTrimestr(grades);
+            SecondTrimestr secondTrimestr4 = new SecondTrimestr(grades);
+            SecondTrimestr secondTrimestr5 = new SecondTrimestr(grades);
+            SecondTrimestr secondTrimestr6 = new SecondTrimestr(grades);
 
-            ThirdTrimestr thirdTrimestr1 = new ThirdTrimestr(rnd);
-            ThirdTrimestr thirdTrimestr2 = new ThirdTrimestr(rnd);
-            ThirdTrimestr thirdTrimestr3 = new ThirdTrimestr(rnd);
-            ThirdTrimestr thirdTrimestr4 = new ThirdTrimestr(rnd);
-            ThirdTrimestr thirdTrimestr5 = new ThirdTrimestr(rnd);
-            ThirdTrimestr thirdTrimestr6 = new ThirdTrimestr(rnd);
+            ThirdTrimestr thirdTrimestr1 = new ThirdTrimestr(grades);
+            ThirdTrimestr thirdTrimestr2 = new ThirdTrimestr(grades);
+            ThirdTrimestr thirdTrimestr3 = new ThirdTrimestr(grades);
+            ThirdTrimestr thirdTrimestr4 = new ThirdTrimestr(grades);
+            ThirdTrimestr thirdTrimestr5 = new ThirdTrimestr(grades);
+            ThirdTrimestr thirdTrimestr6 = new ThirdTrimestr(grades);
 
           /* int average ()
             {

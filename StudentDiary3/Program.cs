@@ -6,7 +6,8 @@ namespace StudentDiary3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PrintReport printReport = new PrintReport();
+            printReport.PrintAllReports();
         }
     }
 }

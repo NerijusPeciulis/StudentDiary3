@@ -8,12 +8,12 @@ namespace StudentDiary3.Business
 {
     public class FirstTrimestr
     {
-        public Random Grade { get; }
+        public int Grade{ get; }
 
-
-        public FirstTrimestr(Random grade)
+        
+        public FirstTrimestr(int grade)
         {
-            Grade = grade;
+           Grade = grade;
         }
     }
 }
