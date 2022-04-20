@@ -8,7 +8,7 @@ namespace StudentDiary3.Business
 {
     public class FirstTrimestr
     {
-        public int Grade{ get; }
+        public int Grade{ get;}
 
         
         public FirstTrimestr(int grade)
