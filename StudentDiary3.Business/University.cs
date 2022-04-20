@@ -2,7 +2,7 @@
 
 namespace StudentDiary3.Business
 {
-    public class Class1
+    public class University
     {
     }
 }
