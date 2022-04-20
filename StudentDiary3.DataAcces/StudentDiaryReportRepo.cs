@@ -50,6 +50,11 @@ namespace StudentDiary3.DataAcces
             ThirdTrimestr thirdTrimestr5 = new ThirdTrimestr(rnd);
             ThirdTrimestr thirdTrimestr6 = new ThirdTrimestr(rnd);
 
+          /* int average ()
+            {
+                double result = (firstTrimestr1 + secondTrimestr1 + thirdTrimestr1) / 3;
+                return Convert.ToInt32(Math.Round(result));
+            }*/
 
             Semester semester1 = new Semester(firstTrimestr1, secondTrimestr1, thirdTrimestr1);
             Semester semester2 = new Semester(firstTrimestr2, secondTrimestr2, thirdTrimestr2);

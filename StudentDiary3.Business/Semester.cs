@@ -11,12 +11,13 @@ namespace StudentDiary3.Business
         public FirstTrimestr FirstTrimestr { get; }
         public SecondTrimestr SecondTrimestr { get; }
         public ThirdTrimestr ThirdTrimestr { get; }
-
+     
         public Semester(FirstTrimestr firstTrimestr, SecondTrimestr secondTrimestr, ThirdTrimestr thirdTrimestr)
         {
             FirstTrimestr = firstTrimestr;
             SecondTrimestr = secondTrimestr;
             ThirdTrimestr = thirdTrimestr;
+            
         }
     }
 }
