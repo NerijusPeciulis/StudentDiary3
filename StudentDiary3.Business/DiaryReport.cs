@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentDiary3.Business
 {
-    internal class DiaryReport
+    public class DiaryReport
     {
         public int Id { get; }
         public University University { get; }
