@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace StudentDiary3.Business
 {
-    internal class Student
+    public class Student
     {
+        public string Name { get; }
+        public string Surname { get; }
+        public string BirthDate { get; }
+
+
+        public Student (string name, string surname, string birthDate)
+        {
+            Name = name;
+            Surname = surname;
+            BirthDate = birthDate;
+        }
+
+
     }
 }
