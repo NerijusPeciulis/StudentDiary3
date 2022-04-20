@@ -26,12 +26,40 @@ namespace StudentDiary3.DataAcces
             Student student5 = new Student("Nerijus", "Peciulis", "2000-11-02");
             Student student6 = new Student("Nerijus", "Peciulis", "2000-11-02");
 
+            Random rnd = new Random();
+            int grade = rnd.Next(5, 10);
+
+            FirstTrimestr firstTrimestr1 = new FirstTrimestr(rnd);
+            FirstTrimestr firstTrimestr2 = new FirstTrimestr(rnd);
+            FirstTrimestr firstTrimestr3 = new FirstTrimestr(rnd);
+            FirstTrimestr firstTrimestr4 = new FirstTrimestr(rnd);
+            FirstTrimestr firstTrimestr5 = new FirstTrimestr(rnd);
+            FirstTrimestr firstTrimestr6 = new FirstTrimestr(rnd);
+
+            SecondTrimestr secondTrimestr1 = new SecondTrimestr(rnd);
+            SecondTrimestr secondTrimestr2 = new SecondTrimestr(rnd);
+            SecondTrimestr secondTrimestr3 = new SecondTrimestr(rnd);
+            SecondTrimestr secondTrimestr4 = new SecondTrimestr(rnd);
+            SecondTrimestr secondTrimestr5 = new SecondTrimestr(rnd);
+            SecondTrimestr secondTrimestr6 = new SecondTrimestr(rnd);
+
+            ThirdTrimestr thirdTrimestr1 = new ThirdTrimestr(rnd);
+            ThirdTrimestr thirdTrimestr2 = new ThirdTrimestr(rnd);
+            ThirdTrimestr thirdTrimestr3 = new ThirdTrimestr(rnd);
+            ThirdTrimestr thirdTrimestr4 = new ThirdTrimestr(rnd);
+            ThirdTrimestr thirdTrimestr5 = new ThirdTrimestr(rnd);
+            ThirdTrimestr thirdTrimestr6 = new ThirdTrimestr(rnd);
 
 
-            FirstTrimestr firstTrimestr1 = new FirstTrimestr()
+            Semester semester1 = new Semester(firstTrimestr1, secondTrimestr1, thirdTrimestr1);
+            Semester semester2 = new Semester(firstTrimestr2, secondTrimestr2, thirdTrimestr2);
+            Semester semester3 = new Semester(firstTrimestr3, secondTrimestr3, thirdTrimestr3);
+            Semester semester4 = new Semester(firstTrimestr4, secondTrimestr4, thirdTrimestr4);
+            Semester semester5 = new Semester(firstTrimestr5, secondTrimestr5, thirdTrimestr5);
+            Semester semester6 = new Semester(firstTrimestr6, secondTrimestr6, thirdTrimestr6);
 
 
-            Semester semester1 = new Semester()
+
         }
     }
 }
