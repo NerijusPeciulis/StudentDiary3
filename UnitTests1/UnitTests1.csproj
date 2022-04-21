@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StudentDiary3.Business\StudentDiary3.Business.csproj" />
+    <ProjectReference Include="..\StudentDiary3.DataAcces\StudentDiary3.DataAcces.csproj" />
+  </ItemGroup>
+
 </Project>
