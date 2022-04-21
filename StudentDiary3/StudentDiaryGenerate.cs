@@ -18,8 +18,8 @@ namespace StudentDiary3
             {
                 data.Add($"ID: {diaryReports[i].Id}");
                 data.Add($"Studento Vardas: {diaryReports[i].Student.Name}");
-                data.Add($"Studentas Pavarde: {diaryReports[i].Student.Surname}");
-                data.Add($"Studentas Gimimo metai: {diaryReports[i].Student.BirthDate}");
+                data.Add($"Studento Pavarde: {diaryReports[i].Student.Surname}");
+                data.Add($"Studento Gimimo metai: {diaryReports[i].Student.BirthDate}");
                 data.Add($"Studijuoja: {diaryReports[i].University.Name}");
                 data.Add($"Adresu: {diaryReports[i].University.Address}");
                 data.Add($"Grupeje: {diaryReports[i].University.Group}");
