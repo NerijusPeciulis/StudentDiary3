@@ -23,9 +23,9 @@ namespace StudentDiary3
                 data.Add($"Studijuoja: {diaryReports[i].University.Name}");
                 data.Add($"Adresu: {diaryReports[i].University.Address}");
                 data.Add($"Grupeje: {diaryReports[i].University.Group}");
-                data.Add($"Pirmo trimestro pazymiu vidurkis: {diaryReports[i].Semester.FirstTrimestr}");
-                data.Add($"Antro trimestro pazymiu vidurkis: {diaryReports[i].Semester.SecondTrimestr}");
-                data.Add($"Trecio trimestro pazymiu vidurkis: {diaryReports[i].Semester.ThirdTrimestr}");
+                data.Add($"Pirmo trimestro pazymiu vidurkis: {diaryReports[i].Student.FirstTrimestr}");
+                data.Add($"Antro trimestro pazymiu vidurkis: {diaryReports[i].Student.SecondTrimestr}");
+                data.Add($"Trecio trimestro pazymiu vidurkis: {diaryReports[i].Student.ThirdTrimestr}");
                 data.Add($"---------------------------------");
 
 
