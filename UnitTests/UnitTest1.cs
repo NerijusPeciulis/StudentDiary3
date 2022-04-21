@@ -9,7 +9,6 @@ namespace UnitTests
             public void IsGenerateRandomInt()
             {
 
-
                 Random rnd = new Random();
                 int grades = rnd.Next(5, 10);
 
