@@ -21,8 +21,12 @@ namespace StudentDiary3.DataAcces
 
             Random rnd = new Random();
             int grades = rnd.Next(5, 10);
+            Random rnd1 = new Random();
+            int grades1 = rnd.Next(5, 10);
+            Random rnd2 = new Random();
+            int grades2 = rnd.Next(5, 10);
 
-            Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02", grades, grades, grades);
+            Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02", grades, grades1, grades2);
             Student student2 = new Student("Kristina", "Peciuliene", "2000-10-02", grades, grades, grades);
             Student student3 = new Student("Meda", "Peciulyte", "2000-01-02", grades, grades, grades);
             Student student4 = new Student("Aurimas", "Peciulis", "2000-08-02", grades, grades, grades);
@@ -69,12 +73,12 @@ namespace StudentDiary3.DataAcces
               Semester semester5 = new Semester(firstTrimestr5, secondTrimestr5, thirdTrimestr5);
               Semester semester6 = new Semester(firstTrimestr6, secondTrimestr6, thirdTrimestr6);*/
 
-            diaryReports.Add(new DiaryReport(1, university1, student1));   // , semester1));
-            diaryReports.Add(new DiaryReport(2, university2, student2));   //, semester2));
-            diaryReports.Add(new DiaryReport(3, university3, student3)); // , semester3));
-            diaryReports.Add(new DiaryReport(4, university4, student4));   // , semester4)); 
-            diaryReports.Add(new DiaryReport(5, university5, student5));    //, semester5));
-            diaryReports.Add(new DiaryReport(6, university6, student6));  // , semester6));
+            diaryReports.Add(new DiaryReport(1, university1, student1));   
+            diaryReports.Add(new DiaryReport(2, university2, student2));   
+            diaryReports.Add(new DiaryReport(3, university3, student3)); 
+            diaryReports.Add(new DiaryReport(4, university4, student4));   
+            diaryReports.Add(new DiaryReport(5, university5, student5));   
+            diaryReports.Add(new DiaryReport(6, university6, student6));  
 
         }
 

@@ -26,6 +26,8 @@ namespace StudentDiary3.Business
             ThirdTrimestr = thirdTrimestr;
         }
 
-
+        
+            
+        
     }
 }
