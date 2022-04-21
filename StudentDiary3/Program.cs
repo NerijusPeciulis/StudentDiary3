@@ -8,6 +8,7 @@ namespace StudentDiary3
         {
             PrintReport printReport = new PrintReport();
             printReport.PrintAllReports();
+            Console.ReadLine();
         }
     }
 }
