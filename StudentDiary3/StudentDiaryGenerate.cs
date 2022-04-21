@@ -16,18 +16,18 @@ namespace StudentDiary3
 
             for (int i = 0; i < diaryReports.Count; i++)
             {
-                data.Add($"ID: {diaryReports[i].Id}");
-                data.Add($"Studento Vardas: {diaryReports[i].Student.Name}");
-                data.Add($"Studento Pavarde: {diaryReports[i].Student.Surname}");
-                data.Add($"Studento Gimimo metai: {diaryReports[i].Student.BirthDate}");
-                data.Add($"Studijuoja: {diaryReports[i].University.Name}");
-                data.Add($"Adresu: {diaryReports[i].University.Address}");
-                data.Add($"Grupeje: {diaryReports[i].University.Group}");
-                data.Add($"Pirmo trimestro pazymiu vidurkis: {diaryReports[i].Student.FirstTrimestr}");
-                data.Add($"Antro trimestro pazymiu vidurkis: {diaryReports[i].Student.SecondTrimestr}");
-                data.Add($"Trecio trimestro pazymiu vidurkis: {diaryReports[i].Student.ThirdTrimestr}");
-                data.Add($"Metinis pazymiu vidurkis: {diaryReports[i].Student.Average}");
-                data.Add($"---------------------------------");
+                data.Add($"     ID: {diaryReports[i].Id}");
+                data.Add($"     Studento Vardas: {diaryReports[i].Student.Name}");
+                data.Add($"     Studento Pavarde: {diaryReports[i].Student.Surname}");
+                data.Add($"     Studento Gimimo metai: {diaryReports[i].Student.BirthDate}");
+                data.Add($"     Studijuoja: {diaryReports[i].University.Name}");
+                data.Add($"     Adresu: {diaryReports[i].University.Address}");
+                data.Add($"     Grupeje: {diaryReports[i].University.Group}");
+                data.Add($"     Pirmo trimestro pazymiu vidurkis: {diaryReports[i].Student.FirstTrimestr}");
+                data.Add($"     Antro trimestro pazymiu vidurkis: {diaryReports[i].Student.SecondTrimestr}");
+                data.Add($"     Trecio trimestro pazymiu vidurkis: {diaryReports[i].Student.ThirdTrimestr}");
+                data.Add($"     Metinis pazymiu vidurkis: {diaryReports[i].Student.Average}");
+                data.Add($"     -------------------------------");
 
 
 

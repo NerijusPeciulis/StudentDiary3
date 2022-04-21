@@ -25,8 +25,8 @@ namespace StudentDiary3
             List<string> studentsDiaryList = studentDiaryGenerate.RetrieveDiaryFormated(studentDiaryReportRepo.Retrieve());
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Generated Students Diary reports:");
-            Console.WriteLine("------------------------------------");
+            Console.WriteLine("     Generated Students Diary reports:");
+            Console.WriteLine("     ------------------------------------");
             Console.ForegroundColor = ConsoleColor.Green;
             for (int i = 0; i < studentsDiaryList.Count; i++)
             {
