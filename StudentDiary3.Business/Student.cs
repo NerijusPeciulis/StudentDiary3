@@ -14,9 +14,10 @@ namespace StudentDiary3.Business
         public int FirstTrimestr { get; }
         public int SecondTrimestr { get; }
         public int ThirdTrimestr { get; }
+        public int Average { get; }
 
 
-        public Student (string name, string surname, string birthDate, int firstTrimestr, int secondTrimestr, int thirdTrimestr)
+        public Student (string name, string surname, string birthDate, int firstTrimestr, int secondTrimestr, int thirdTrimestr, int average)
         {
             Name = name;
             Surname = surname;
@@ -24,6 +25,7 @@ namespace StudentDiary3.Business
             FirstTrimestr = firstTrimestr;
             SecondTrimestr = secondTrimestr;
             ThirdTrimestr = thirdTrimestr;
+            Average = average;
         }
 
 

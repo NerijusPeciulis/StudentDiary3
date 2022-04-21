@@ -26,6 +26,7 @@ namespace StudentDiary3
                 data.Add($"Pirmo trimestro pazymiu vidurkis: {diaryReports[i].Student.FirstTrimestr}");
                 data.Add($"Antro trimestro pazymiu vidurkis: {diaryReports[i].Student.SecondTrimestr}");
                 data.Add($"Trecio trimestro pazymiu vidurkis: {diaryReports[i].Student.ThirdTrimestr}");
+                data.Add($"Metinis pazymiu vidurkis: {diaryReports[i].Student.Average}");
                 data.Add($"---------------------------------");
 
 

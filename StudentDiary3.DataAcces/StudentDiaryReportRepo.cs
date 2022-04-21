@@ -33,12 +33,23 @@ namespace StudentDiary3.DataAcces
             int grades5 = rnd.Next(5, 10);
             Random rnd6 = new Random();
             int grades6 = rnd.Next(5, 10);
-            Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02", grades, grades1, grades2);
-            Student student2 = new Student("Kristina", "Peciuliene", "2000-10-02", grades3, grades1, grades5);
-            Student student3 = new Student("Meda", "Peciulyte", "2000-01-02", grades4, grades6, grades1);
-            Student student4 = new Student("Aurimas", "Peciulis", "2000-08-02", grades, grades2, grades3);
-            Student student5 = new Student("Leja", "Peciulyte", "2000-04-02", grades4, grades5, grades6);
-            Student student6 = new Student("Austeja", "Peciulyte", "2000-03-02", grades1, grades3, grades4);
+
+            int average = (grades + grades1 + grades2) / 3;
+            int average1 = (grades3 + grades1 + grades5) / 3;
+            int average2 = (grades4 + grades6 + grades1) / 3;
+            int average3 = (grades + grades2 + grades3) / 3;
+            int average4 = (grades4 + grades5 + grades6) / 3;
+            int average5 = (grades1 + grades3 + grades4) / 3;
+
+            Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02", grades, grades1, grades2, average);
+            Student student2 = new Student("Kristina", "Peciuliene", "2000-10-02", grades3, grades1, grades5, average1);
+            Student student3 = new Student("Meda", "Peciulyte", "2000-01-02", grades4, grades6, grades1, average2);
+            Student student4 = new Student("Aurimas", "Peciulis", "2000-08-02", grades, grades2, grades3, average3);
+            Student student5 = new Student("Leja", "Peciulyte", "2000-04-02", grades4, grades5, grades6, average4);
+            Student student6 = new Student("Austeja", "Peciulyte", "2000-03-02", grades1, grades3, grades4, average5);
+
+            
+
 
             diaryReports.Add(new DiaryReport(1, university1, student1));  
             diaryReports.Add(new DiaryReport(2, university2, student2));   
