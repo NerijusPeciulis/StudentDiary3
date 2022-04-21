@@ -15,5 +15,11 @@ namespace unitTets
 
             Assert.InRange(10, 5, 10);
         }
+        [Fact]
+        public void IsCalculateAverageOfTrimestrs()
+        {
+
+        }
+
     }
 }
