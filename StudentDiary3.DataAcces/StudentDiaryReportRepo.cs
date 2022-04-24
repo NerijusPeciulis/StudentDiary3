@@ -19,31 +19,12 @@ namespace StudentDiary3.DataAcces
             University university5 = new University("Lietuvos sveikatos mokslų universitetas", "A. Mickevičiaus g. 9, Kaunas", "NEK-84");
             University university6 = new University("Mykolo Romerio universitetas", "Ateities g. 20, Vilnius", "NEK-85");
 
-            Random rnd = new Random();
-            int grades = rnd.Next(5, 10);
-            int grades1 = rnd.Next(5, 10);
-            int grades2 = rnd.Next(5, 10);
-            int grades3 = rnd.Next(5, 10);
-            int grades4 = rnd.Next(5, 10);
-            int grades5 = rnd.Next(5, 10);
-            int grades6 = rnd.Next(5, 10);
-
-            int average = (grades + grades1 + grades2) / 3;
-            int average1 = (grades3 + grades1 + grades5) / 3;
-            int average2 = (grades4 + grades6 + grades1) / 3;
-            int average3 = (grades + grades2 + grades3) / 3;
-            int average4 = (grades4 + grades5 + grades6) / 3;
-            int average5 = (grades1 + grades3 + grades4) / 3;
-
-            Student student1 = new Student("Nerijus", "Peciulis", "2000-11-02", grades, grades1, grades2, average);
-            Student student2 = new Student("Kristina", "Peciuliene", "2000-10-02", grades3, grades1, grades5, average1);
-            Student student3 = new Student("Meda", "Peciulyte", "2000-01-02", grades4, grades6, grades1, average2);
-            Student student4 = new Student("Aurimas", "Peciulis", "2000-08-02", grades, grades2, grades3, average3);
-            Student student5 = new Student("Leja", "Peciulyte", "2000-04-02", grades4, grades5, grades6, average4);
-            Student student6 = new Student("Austeja", "Peciulyte", "2000-03-02", grades1, grades3, grades4, average5);
-
-            
-
+            Student student1 = CreateNewStudent("Nerijus", "Peciulis", "2000-11-02", GenerateRandomGrade(), GenerateRandomGrade(), GenerateRandomGrade());
+            Student student2 = CreateNewStudent("Kristina", "Peciuliene", "2000-10-02", GenerateRandomGrade(), GenerateRandomGrade(), GenerateRandomGrade());
+            Student student3 = CreateNewStudent("Meda", "Peciulyte", "2000-01-02", GenerateRandomGrade(), GenerateRandomGrade(), GenerateRandomGrade());
+            Student student4 = CreateNewStudent("Aurimas", "Peciulis", "2000-08-02", GenerateRandomGrade(), GenerateRandomGrade(), GenerateRandomGrade());
+            Student student5 = CreateNewStudent("Leja", "Peciulyte", "2000-04-02", GenerateRandomGrade(), GenerateRandomGrade(), GenerateRandomGrade());
+            Student student6 = CreateNewStudent("Austeja", "Peciulyte", "2000-03-02", GenerateRandomGrade(), GenerateRandomGrade(), GenerateRandomGrade());
 
             diaryReports.Add(new DiaryReport(1, university1, student1));  
             diaryReports.Add(new DiaryReport(2, university2, student2));   
@@ -52,6 +33,22 @@ namespace StudentDiary3.DataAcces
             diaryReports.Add(new DiaryReport(5, university5, student5));    
             diaryReports.Add(new DiaryReport(6, university6, student6));  
 
+        }
+        public int GenerateRandomGrade()
+        {
+            Random rnd = new Random();
+            return rnd.Next(5, 10); 
+        }
+        public Student CreateNewStudent(string name, string surname, string birthdate, int grade1, int grade2, int grade3)
+        {
+            var average = CalculateAverage(grade1, grade2, grade3);
+
+            return new Student(name, surname, birthdate, grade1, grade2, grade3, average);
+        }
+
+        public int CalculateAverage(int grade1, int grade2, int grade3)
+        {
+            return (grade1 + grade2 + grade3) / 3;
         }
 
         public List<DiaryReport> Retrieve()
