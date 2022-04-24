@@ -1,6 +1,7 @@
 ﻿using StudentDiary3.Business;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +31,10 @@ namespace StudentDiary3
                 data.Add($"     -------------------------------");
 
 
-
+                var filename = "ataskaita.txt";
+                var path = @$"C:\Users\Nerijaus\Desktop\StudentDiary3\StudentDiary3\{filename}";
+                File.WriteAllLines(path, data);
+;
             }
 
             return data;
